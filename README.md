@@ -36,7 +36,7 @@ Check out the live demo: [CryptoTracker Live](https://crypto-tracker-phi-bay.ver
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/CryptoTracker.git
+git clone https://github.com/Mohamednowfil/CryptoTracker.git
 ```
 
 2. **Navigate to the project directory:**
