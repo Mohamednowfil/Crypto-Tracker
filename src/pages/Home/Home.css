@@ -1,0 +1,138 @@
+/* General Page Styling */
+body {
+    background: linear-gradient(135deg, #1a1f71 0%, #f56040 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .home {
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  
+  .crypto-table {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Flexbox Table Design */
+  .table-header,
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .table-header {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .table-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+  }
+  
+  .table-row:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .table-header div,
+  .table-row div {
+    flex: 1;
+    padding: 5px;
+    min-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .table-header .rank,
+  .table-row .rank {
+    flex: 0.5;
+  }
+  
+  .table-header .coins,
+  .table-row .coins {
+    flex: 2;
+  }
+  
+  .table-header .price,
+  .table-row .price {
+    flex: 1;
+  }
+  
+  .table-header .change,
+  .table-row .change {
+    flex: 1;
+  }
+  
+  .table-header .market-cap,
+  .table-row .market-cap {
+    flex: 1.5;
+  }
+  
+  /* Coin Image */
+  .coin-image {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1000px) {
+    .table-header div,
+    .table-row div {
+      min-width: 60px;
+    }
+  
+    .table-header .market-cap,
+    .table-row .market-cap {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .table-header {
+      display: none;
+    }
+  
+    .table-row {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+  
+    .table-row div {
+      text-align: left;
+      padding: 5px 0;
+      width: 100%;
+      white-space: normal;
+    }
+  
+    .coin-image {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

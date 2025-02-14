@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(135deg, #1a1f71 0%, #f56040 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.chart-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.chart-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.chart-description {
+    text-align: center;
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.chart-wrapper {
+    overflow-x: auto;
+}
+
+.chart-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.chart-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.chart-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+@media (max-width: 1024px) {
+    .chart-container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chart-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container {
+        padding: 10px;
+    }
+
+    .chart-title {
+        font-size: 18px;
+    }
+}

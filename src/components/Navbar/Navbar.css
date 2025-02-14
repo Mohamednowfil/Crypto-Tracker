@@ -1,0 +1,40 @@
+.custom-navbar {
+    background: linear-gradient(90deg, #1a1f71 0%, #f56040 100%);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .custom-navbar .navbar-brand img {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  
+  .custom-navbar .nav-link {
+    color: #f0f0f0 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #ffdd57 !important;
+  }
+  
+  .select-currency {
+    background-color: #f0f0f0;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .sign-up {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .sign-up:hover {
+    background: #ffdd57;
+    color: #1a1f71;
+  }
+  
